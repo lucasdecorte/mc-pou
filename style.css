@@ -1,0 +1,486 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#111;
+    color:white;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+
+    z-index:100;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:800;
+
+}
+
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#e63946;
+
+}
+
+
+
+
+
+/* HERO */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.8)
+    ),
+    url("img/hamburguesa.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+    line-height:1.1;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+    max-width:600px;
+    margin-bottom:35px;
+
+}
+
+
+
+.boton-principal{
+
+    background:#e63946;
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.boton-principal:hover{
+
+    background:#b91c1c;
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* PRODUCTOS */
+
+.productos{
+
+    padding:90px 8%;
+
+}
+
+
+.productos h2,
+.porque h2,
+.opiniones h2{
+
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+
+}
+
+
+
+
+.contenedor-productos{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.producto{
+
+    background:#1c1c1c;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+    transition:.3s;
+
+}
+
+
+
+.producto:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.producto img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+
+}
+
+
+
+.producto h3{
+
+    font-size:25px;
+    margin:20px 0 10px;
+
+}
+
+
+
+.producto p{
+
+    color:#ccc;
+    padding:0 20px;
+
+}
+
+
+
+.producto h4{
+
+    font-size:25px;
+    margin:20px;
+
+}
+
+
+
+
+
+/* BOTON ROJO */
+
+
+.interesa{
+
+    display:inline-block;
+
+    background:#e63946;
+
+    color:white;
+
+    padding:13px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.interesa:hover{
+
+    background:#b91c1c;
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* PORQUE */
+
+.porque{
+
+    padding:90px 8%;
+
+    background:#181818;
+
+}
+
+
+
+.beneficios{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+
+
+.beneficios div{
+
+    background:#222;
+
+    padding:35px;
+
+    border-radius:20px;
+
+}
+
+
+
+.beneficios h3{
+
+    margin:15px 0;
+
+    font-size:24px;
+
+}
+
+
+
+
+
+/* OPINIONES */
+
+
+.opiniones{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.opinion{
+
+    background:#1c1c1c;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+.opinion p{
+
+    margin:20px 0;
+
+    color:#ddd;
+
+}
+
+
+
+textarea{
+
+    margin-top:40px;
+
+    width:80%;
+
+    height:120px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+}
+
+
+
+.opiniones button{
+
+    display:block;
+
+    margin:20px auto;
+
+    padding:15px 40px;
+
+    background:#e63946;
+
+    border:none;
+
+    color:white;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#000;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:700px){
+
+
+header{
+
+    flex-direction:column;
+
+}
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+.productos h2,
+.porque h2,
+.opiniones h2{
+
+    font-size:32px;
+
+}
+
+
+}
